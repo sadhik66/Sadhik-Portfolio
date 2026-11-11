@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+header {
+    background-color: #111c31;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 26px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0b1120;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+/* ABOUT SECTION */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.about-card {
+    background-color: #17243a;
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-card p {
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}
+/* EDUCATION SECTION */
+.education-card {
+    background-color: #17243a;
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 850px;
+    margin: auto;
+    border-left: 4px solid #38bdf8;
+}
+
+.education-card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.education-card h4 {
+    color: #38bdf8;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    color: #cbd5e1;
+    margin-top: 8px;
+    font-size: 16px;
+}
+/* SKILLS SECTION */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #17243a;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 10px;
+    color: #38bdf8;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #263b58;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background-color: #1e3150;
+}
+/* PROJECTS SECTION */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #17243a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #263b58;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-card span {
+    color: #94a3b8;
+    font-size: 14px;
+}
+/* CONTACT SECTION */
+.contact-card {
+    background-color: #17243a;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact-card p {
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-card a {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0b1120;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    background-color: white;
+}
+/* FOOTER */
+.footer {
+    background-color: #111c31;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 5px 0;
+}
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card,
+    .education-card,
+    .contact-card {
+        padding: 22px;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+}
+/* PROFILE IMAGE */
+.hero {
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+/* PROFILE IMAGE */
+.hero {
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+}
+
+/* MOBILE PROFILE IMAGE */
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
